@@ -1,0 +1,7 @@
+<form [formGroup]="pessoa">
+    <input type="text" formControlName="name">
+    <input type="number" formControlName="age">
+</form>
+
+<p>{{pessoa.value.name}}</p>
+<p>{{pessoa.value.age}}</p>
