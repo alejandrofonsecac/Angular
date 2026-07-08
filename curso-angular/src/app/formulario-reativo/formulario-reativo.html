@@ -5,3 +5,29 @@
 
 <p>{{pessoa.value.name}}</p>
 <p>{{pessoa.value.age}}</p>
+
+<hr>
+
+@if (pessoa.get('name')?.errors?.['required']) {
+    <p>O campo nome deve ser prenchido</p>
+}
+
+@if (pessoa.get('name')?.errors?.['min-length']) {
+    <p>O campo nome deve ter pelo menos três caracteres</p>
+}
+
+@if (pessoa.get('name')?.valid) {
+    <p>Nome válido</p>
+}
+
+@if (pessoa.get('age')?.errors?.['required']) {
+    <p>O campo idade deve ser prenchido</p>
+}
+
+@if (pessoa.get('age')?.errors?.['max']) {
+    <p>O campo idade deve ter no máximo de 120.</p>
+}
+
+@if (pessoa.get('age')?.valid) {
+    <p>Idade Válida</p>
+}
