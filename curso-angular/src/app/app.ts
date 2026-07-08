@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { Formulario } from "./formulario/formulario";
+import { DiretivaStyle } from './diretiva-style/diretiva-style';
 import { ControleFluxo } from "./controle-fluxo/controle-fluxo";
 
 @Component({
   selector: 'app-root',
-  imports: [ControleFluxo],
+  imports: [DiretivaStyle],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
