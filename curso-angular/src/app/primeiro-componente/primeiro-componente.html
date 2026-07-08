@@ -1,3 +1,21 @@
 <p>
     Meu primeiro componente
 </p>
+
+<!--Interpolação de texto-->
+<p>{{name}}</p>
+<p>{{'Olá '+name}}</p>
+<p>{{`Olá ${name}`}}</p>
+
+<!--Expressoes matematicas-->
+<p>{{5+5}}</p>
+
+<!--Funções/Metodos-->
+<p>{{mensagem()}}</p>
+
+<!--Interpolação com operador ternário-->
+<p>{{media >= 7 ? 'Aprovado' : 'Reprovado'}}</p>
+
+<!--Interpolação com objetos-->
+<p>{{pessoa.nome}}</p>
+<p>{{pessoa.idade}}</p>
