@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { Signals } from './signals/signals';
+import { ComputedSignal } from './computed-signal/computed-signal';
 @Component({
   selector: 'app-root',
-  imports: [Signals],
+  imports: [ComputedSignal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
