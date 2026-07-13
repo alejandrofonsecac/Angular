@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { ProjectCrud } from './project-crud/project-crud';
+import { Signals } from './signals/signals';
 @Component({
   selector: 'app-root',
-  imports: [ProjectCrud],
+  imports: [Signals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
