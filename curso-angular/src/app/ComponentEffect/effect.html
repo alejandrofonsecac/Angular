@@ -1,0 +1,10 @@
+<div [ngStyle]="{
+  'background-color': tema() === 'dark' ? '#333' : '#fff',
+  'color': tema() === 'dark' ? '#fff' : '#000'
+}">
+  Tema atual: {{ tema() }}
+</div>
+
+<button (click)="alternarTema()">
+  Alternar tema
+</button>
